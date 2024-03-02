@@ -1,24 +1,22 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
-
+import { Swiper2Component } from './pages/swiper2/swiper2.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Swiper2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA] // add this part
 })
 export class AppModule { }

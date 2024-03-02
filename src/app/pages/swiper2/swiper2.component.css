@@ -1,0 +1,27 @@
+body {
+  background: #313131;
+
+}
+.mySwiper {
+  width: 70%; /* スライドショー全体の幅を画面の70%に設定 */
+  height: auto; /* 高さを自動に設定 */
+}
+
+
+.image-slide {
+height: 300px; /* 各画像の高さを300pxに設定 */
+width: auto; /* 幅は自動に設定 */
+}
+
+/* スライダーのナビゲーションボタンの色 */
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: red; /* ナビゲーションボタンの色 */
+}
+
+/* スライダーのナビゲーションポイントの色 */
+.swiper-pagination-bullet {
+  background-color: green; /* 非アクティブなナビゲーションポイントの色 */
+}
+.swiper-pagination-bullet-active {
+  background-color: blue; /* アクティブなナビゲーションポイントの色 */
+}

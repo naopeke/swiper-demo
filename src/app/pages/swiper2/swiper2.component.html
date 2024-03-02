@@ -1,0 +1,32 @@
+<body>
+
+  <p>swiper2 works!</p>
+
+  <!-- <p>https://swiperjs.com/element</p>
+  <p>https://swiperjs.com/demos#effect-coverflow</p>
+  <p>https://swiperjs.com/element#core-version--modules</p>
+  <p>https://medium.com/@fbanyai/swiper-10-angular-16-uncovered-1721bf32dfd6</p>
+  <p>https://www.youtube.com/watch?v=01jwVb3WLoA</p>
+  <p>https://v8.swiperjs.com/angular</p>
+  <p>swiper@9.2.4</p>
+  <p>npm i swiper@8.4.6</p>
+  <p>https://www.youtube.com/watch?v=U8c20Jgxm2Q</p> -->
+  
+
+  <div>
+    <swiper class="mySwiper" [config]="config" (slideClicked)="onSlideClicked($event)">
+      <ng-template swiperSlide><img src="assets/images/card1.jpg" alt="Image 2" class="image-slide"><p>ImageLeft</p></ng-template>
+      <ng-template swiperSlide><img src="assets/images/card2.jpg" alt="Image 1" class="image-slide"><p>Image2</p></ng-template>
+      <ng-template swiperSlide><img src="assets/images/card3.jpg" alt="Image 3" class="image-slide"><p>Image3</p></ng-template>
+      <ng-template swiperSlide><img src="assets/images/card4.jpg" alt="Image 4"class="image-slide" ><p>Image4</p></ng-template>
+      <ng-template swiperSlide><img src="assets/images/card5.jpg" alt="Image 5" class="image-slide"><p>Image5</p></ng-template>
+      <ng-template swiperSlide><img src="assets/images/card1.jpg" alt="Image 2" class="image-slide"><p>ImageRight</p></ng-template>
+    </swiper>
+    
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  
+
+</body>
+  
